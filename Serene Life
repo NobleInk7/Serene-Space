@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Aesthetic Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Welcome to My Aesthetic Website</h1>
+        <p class="subtitle">Where minimalism meets elegance</p>
+    </header>
+
+    <section class="content">
+        <h2>About Me</h2>
+        <p>Hello! I'm a creator who loves clean design and calm colors. This site is a place to showcase my work and ideas.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <div class="image-box">Image 1</div>
+            <div class="image-box">Image 2</div>
+            <div class="image-box">Image 3</div>
+            <div class="image-box">Image 4</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 My Aesthetic Website | Designed with love.</p>
+    </footer>
+</body>
+</html>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #4a4e69;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #9a8c98;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.content, .gallery {
+    max-width: 800px;
+    width: 90%;
+    margin: 30px 0;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2, .gallery h2 {
+    font-size: 2em;
+    color: #4a4e69;
+    margin-bottom: 15px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image-box {
+    background-color: #c9ada7;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background-color: #22223b;
+    color: #f2e9e4;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
